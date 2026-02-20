@@ -293,6 +293,15 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 3. **Run the Queries**: Use the SQL queries to perform your analysis.
 4. **Explore and Modify**: Feel free to modify the queries to explore different aspects of the dataset or answer additional business questions.
 
+---
+
+## 🙏 Acknowledgment
+
+This project was inspired by an existing SQL retail analysis repository.  
+I used it as a reference to understand the structure and approach, and then modified the queries, improved logic, and added additional analysis based on my learning.
+
+All enhancements and customizations were implemented independently for learning purposes.
+
 ## Author - Sonal Marwah
 Aspiring Data Analyst | SQL Enthusiast
 
