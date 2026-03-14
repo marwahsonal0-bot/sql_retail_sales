@@ -1,4 +1,4 @@
-# Retail Sales Analysis SQL Project
+# Retail Sales Analysis – End-to-End Data Analyst Project
 
 ## Project Overview
 
@@ -23,7 +23,7 @@ This project is designed to demonstrate SQL skills and techniques typically used
 - **Table Creation**: A table named `retail_sales` is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
 ```sql
-CREATE DATABASE sqlsql_project_p1;
+CREATE DATABASE sql_project_p1;
 
 CREATE TABLE retail_sales
 (
@@ -71,7 +71,21 @@ WHERE
     quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
 ```
 
-### 3. Data Analysis & Findings
+### 3. Data Cleaning Using Python
+
+Python was used to preprocess the dataset before SQL analysis.
+
+Key steps performed:
+
+- Loaded dataset using Pandas
+- Checked dataset structure using df.head(), df.info(), df.describe()
+- Identified missing values
+- Removed incomplete records using dropna()
+- Checked duplicate rows
+- Generated revenue analysis by category and gender
+- Exported cleaned dataset for SQL analysis
+
+### 4. Data Analysis & Findings
 
 The following SQL queries were developed to answer specific business questions:
 
@@ -265,9 +279,18 @@ FROM retail_sales
 SELECT *
 FROM retail_sales
 WHERE cogs > total_sale
-ORDER BY total_quantity_sold DESC
 ```
 
+### 5. Power BI Dashboard
+
+An interactive Power BI dashboard was created to visualize key insights from the dataset, including:
+
+- Total Revenue
+- Sales by Category
+- Customer Demographics
+- Monthly Sales Trends
+
+The dashboard provides a visual overview of sales performance and customer behavior.
 
 ## Findings
 
@@ -303,7 +326,7 @@ I used it as a reference to understand the structure and approach, and then modi
 All enhancements and customizations were implemented independently for learning purposes.
 
 ## Author - Sonal Marwah
-Aspiring Data Analyst | SQL Enthusiast
+Aspiring Data Analyst | Skilled in SQL, Python, and Power BI
 
 This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
 
